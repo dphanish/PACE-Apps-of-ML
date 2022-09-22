@@ -4,7 +4,8 @@ Once connected to the VPN, log in to ondemand-pace-ice.pace.gatech.edu using you
 
 ### Environment Preparation (PACE-ICE Cluster)
 1. Once an Jupyter job has started, oprun the following commands to prepare an environment on local scratch:
-  - `module load anaconda3`
+  - `mkdir ${TMPDIR}/.conda`
+  - `ln -s ${TMPDIR}/.conda ${HOME}/.conda`
   - `conda create -y -n app-of-ml python=3.10 ipykernel`
   - `conda activate app-of-ml`
   - `pip install intel-tensorflow-avx512==2.9.1 matplotlib pandas seaborn scikit-learn`
