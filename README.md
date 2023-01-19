@@ -5,7 +5,7 @@ Once connected to the VPN, log in to ondemand-pace-ice.pace.gatech.edu using you
 ### Environment Preparation (PACE-ICE Cluster)
 1. Once an Jupyter job has started, oprun the following commands to prepare an environment:
   - `conda create --prefix ~/PACEMLenv python=3.10 ipykernel`
-  - `conda activate ~/PACEML`
+  - `conda activate ~/PACEMLenv`
   - `pip install intel-tensorflow-avx512==2.9.1 matplotlib pandas seaborn scikit-learn`
 2. Clone this repo to your home directory and change directory:
   - `git clone https://github.com/dphanish/PACE-Apps-of-ML.git`
